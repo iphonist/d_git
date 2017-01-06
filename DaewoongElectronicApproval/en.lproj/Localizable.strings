@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  DaewoongElectronicApproval
+
+  Created by Ids&Trust on 2014. 12. 30..
+  Copyright (c) 2014년 Ids&Trust. All rights reserved.
+*/
+
+"str_e_approval" = "E-Approval";
+"str_smartrunner" = "SMART RUNNER";
+"str_login" = "Login";
+"str_logout" = "Logout";
+"str_Confirm" = "Confirm";
+"str_OK" = "OK";
+"str_No" = "No";
+"str_error" = "Error";
+
+"msg_login_id_empty" = "Not be able to login.\nPlease enter the ID.";
+"msg_login_pw_empty" = "Not be able to login.\nPlease enter the Password.";
+"msg_login_error" = "Not be able to login.\nPlease check the login information and network environment.";
+"msg_error_network" = "Can not connect to network!\nPlease check your network settings.";
+"msg_logout" = "Do you want Logout?";
+
+"remote_title" = "SMART RUNNER";
+"remote_title_daewoong" = "E-Approval";

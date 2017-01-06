@@ -1,0 +1,38 @@
+//
+//  DaewoongEA-Prefix.pch
+//  DaewoongElectronicApproval
+//
+//  Created by Hyemin Kim on 2016. 5. 9..
+//  Copyright © 2016년 Ids&Trust. All rights reserved.
+//
+
+#ifndef DaewoongEA_Prefix_pch
+#define DaewoongEA_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef Daewoong
+#define mainURL @"http://bearworld.co.kr/workflow/appwfMain.wfdo"
+#define getcodeURL @"https://sr.daewoong.co.kr:443/wiseone-sso-server/oauth/naver-authorize"
+#define clientID @"SmartRunner4"
+#define gettokenURL @"https://sr.daewoong.co.kr:443/wiseone-sso-server/oauth/token?grant_type=authorization_code"
+#elif SmartRunner
+#define mainURL @"http://cloud.wiseone.co.kr/workflow/appwfMain.wfdo"
+#define getcodeURL @"https://cloud.wiseone.co.kr/wiseone-sso-server/oauth/naver-authorize"
+#define clientID @"SRWorkFlowApp" t
+#define gettokenURL @"https://cloud.wiseone.co.kr/wiseone-sso-server/oauth/token?grant_type=authorization_code"
+#endif
+
+
+#ifdef DEBUG
+#define NSLog(s, ...) NSLog(@"<%@(%d):%s> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#else // #####
+#define NSLog(s, ...) NSLog(@"<%@(%d):%s> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#endif
+
+
+
+
+#endif /* DaewoongEA_Prefix_pch */

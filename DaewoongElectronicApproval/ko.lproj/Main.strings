@@ -1,0 +1,9 @@
+
+/* Class = "IBUINavigationItem"; title = "전자결재"; ObjectID = "Fqu-v3-Gvg"; */
+"Fqu-v3-Gvg.title" = "전자결재";
+
+/* Class = "IBUITextField"; placeholder = "ID"; ObjectID = "nDw-zC-pio"; */
+"nDw-zC-pio.placeholder" = "ID";
+
+/* Class = "IBUITextField"; placeholder = "Password"; ObjectID = "rxi-62-zQ1"; */
+"rxi-62-zQ1.placeholder" = "Password";
