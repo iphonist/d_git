@@ -18,22 +18,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
     
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-    {
-        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
-        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0){
+        NSLog(@"register over 10");
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
+            if( !error ){
+                [[UIApplication sharedApplication] registerForRemoteNotifications];
+            }
+        }];
     }
-    else
-    {
-        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
-         (UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert)];
+    else{
+        
+            NSLog(@"register over 8");
+            [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:
+                                                                                 (UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+            [[UIApplication sharedApplication] registerForRemoteNotifications];
+        
     }
+    
+    
     
 
     
     return YES;
 }
+
+
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)())completionHandler{
+    
+    //Called to let your app know which action was selected by the user for a given notification.
+    NSLog(@"didReceiveNotificationResponse");
+    NSLog(@"Userinfo %@",response.notification.request.content.userInfo);
+    
+    [self application:[UIApplication sharedApplication] didReceiveRemoteNotification:response.notification.request.content.userInfo];
+}
+
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
 {
@@ -103,6 +126,9 @@ NSString *title = @"";
     }
 }
 #endif
+
+
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

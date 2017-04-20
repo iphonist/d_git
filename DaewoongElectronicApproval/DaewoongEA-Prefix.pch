@@ -14,15 +14,15 @@
 
 
 #ifdef Daewoong
-#define mainURL @"http://bearworld.co.kr/workflow/appwfMain.wfdo"
-#define getcodeURL @"https://sr.daewoong.co.kr:443/wiseone-sso-server/oauth/naver-authorize"
-#define clientID @"SmartRunner4"
-#define gettokenURL @"https://sr.daewoong.co.kr:443/wiseone-sso-server/oauth/token?grant_type=authorization_code"
+    #define mainURL @"http://bearworld.co.kr/workflow/appwfMain.wfdo"
+    #define getcodeURL @"https://sr.daewoong.co.kr:443/wiseone-sso-server/oauth/naver-authorize"
+    #define clientID @"SmartRunner4"
+    #define gettokenURL @"https://sr.daewoong.co.kr:443/wiseone-sso-server/oauth/token?grant_type=authorization_code"
 #elif SmartRunner
-#define mainURL @"http://cloud.wiseone.co.kr/workflow/appwfMain.wfdo"
-#define getcodeURL @"https://cloud.wiseone.co.kr/wiseone-sso-server/oauth/naver-authorize"
-#define clientID @"SRWorkFlowApp" t
-#define gettokenURL @"https://cloud.wiseone.co.kr/wiseone-sso-server/oauth/token?grant_type=authorization_code"
+    #define mainURL @"http://cloud.wiseone.co.kr/workflow/appwfMain.wfdo"
+    #define getcodeURL @"https://cloud.wiseone.co.kr/wiseone-sso-server/oauth/naver-authorize"
+    #define clientID @"SRWorkFlowApp"
+    #define gettokenURL @"https://cloud.wiseone.co.kr/wiseone-sso-server/oauth/token?grant_type=authorization_code"
 #endif
 
 

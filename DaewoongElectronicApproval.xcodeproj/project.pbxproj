@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46CC923E1EA728CC00AD92DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C4242AF1A2FE6F900FEA0FD /* InfoPlist.strings */; };
 		8C4242421A2FE20A00FEA0FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4242411A2FE20A00FEA0FD /* main.m */; };
 		8C42424D1A2FE20A00FEA0FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C42424C1A2FE20A00FEA0FD /* Images.xcassets */; };
 		8C4242501A2FE20A00FEA0FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C42424E1A2FE20A00FEA0FD /* LaunchScreen.xib */; };
@@ -70,7 +71,6 @@
 		CFFDB9521CE0770400D52907 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4242C21A300EDC00FEA0FD /* WebKit.framework */; };
 		CFFDB9531CE0770400D52907 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4242B91A2FFB8F00FEA0FD /* CFNetwork.framework */; };
 		CFFDB9551CE0770400D52907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B37811A523B47003A0463 /* Main.storyboard */; };
-		CFFDB9561CE0770400D52907 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C4242AF1A2FE6F900FEA0FD /* InfoPlist.strings */; };
 		CFFDB9571CE0770400D52907 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C7647201A64BF8300756D17 /* Icon.png */; };
 		CFFDB9581CE0770400D52907 /* intro_ids.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C8D62001A4D3BB9007EED51 /* intro_ids.png */; };
 		CFFDB9591CE0770400D52907 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CB8345D1A636F000013EB1E /* default.png */; };
@@ -93,13 +93,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46CC92301EA7249900AD92DD /* DaewoongElectronicApproval.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaewoongElectronicApproval.entitlements; sourceTree = "<group>"; };
+		46CC92311EA7249C00AD92DD /* SmartRunner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartRunner.entitlements; sourceTree = "<group>"; };
 		8C42423C1A2FE20A00FEA0FD /* DaewoongElectronicApproval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaewoongElectronicApproval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4242401A2FE20A00FEA0FD /* DaewoongEA-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DaewoongEA-info.plist"; sourceTree = "<group>"; };
 		8C4242411A2FE20A00FEA0FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8C42424C1A2FE20A00FEA0FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8C42424F1A2FE20A00FEA0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8C4242551A2FE20A00FEA0FD /* DaewoongElectronicApprovalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaewoongElectronicApprovalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C42425A1A2FE20A00FEA0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C42425B1A2FE20A00FEA0FD /* DaewoongElectronicApprovalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaewoongElectronicApprovalTests.m; sourceTree = "<group>"; };
 		8C4242671A2FE33000FEA0FD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8C4242681A2FE33000FEA0FD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 		8C4242331A2FE20A00FEA0FD = {
 			isa = PBXGroup;
 			children = (
+				46CC92311EA7249C00AD92DD /* SmartRunner.entitlements */,
 				8C4242C41A300F0000FEA0FD /* UIKit.framework */,
 				8C4242C21A300EDC00FEA0FD /* WebKit.framework */,
 				8C4242B91A2FFB8F00FEA0FD /* CFNetwork.framework */,
@@ -226,6 +228,7 @@
 		8C42423E1A2FE20A00FEA0FD /* DaewoongElectronicApproval */ = {
 			isa = PBXGroup;
 			children = (
+				46CC92301EA7249900AD92DD /* DaewoongElectronicApproval.entitlements */,
 				8C4DAEAC1A3FADFE004CDF92 /* Base64 */,
 				8C4242BE1A300E3300FEA0FD /* Reachability */,
 				8C42426D1A2FE37700FEA0FD /* AFNetworking */,
@@ -262,17 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				8C42425B1A2FE20A00FEA0FD /* DaewoongElectronicApprovalTests.m */,
-				8C4242591A2FE20A00FEA0FD /* Supporting Files */,
 			);
 			path = DaewoongElectronicApprovalTests;
-			sourceTree = "<group>";
-		};
-		8C4242591A2FE20A00FEA0FD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				8C42425A1A2FE20A00FEA0FD /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8C42426D1A2FE37700FEA0FD /* AFNetworking */ = {
@@ -421,10 +415,22 @@
 					8C42423B1A2FE20A00FEA0FD = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 4YF896FPJ9;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					8C4242541A2FE20A00FEA0FD = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 8C42423B1A2FE20A00FEA0FD;
+					};
+					CFFDB9371CE0770400D52907 = {
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -471,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CC923E1EA728CC00AD92DD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,7 +488,6 @@
 				CFFDB9651CE1698500D52907 /* SmartRunner-info.plist in Resources */,
 				CFFDB9631CE168D300D52907 /* Images.xcassets in Resources */,
 				CFFDB9551CE0770400D52907 /* Main.storyboard in Resources */,
-				CFFDB9561CE0770400D52907 /* InfoPlist.strings in Resources */,
 				CFFDB9571CE0770400D52907 /* Icon.png in Resources */,
 				CFFDB9581CE0770400D52907 /* intro_ids.png in Resources */,
 				CFFDB9591CE0770400D52907 /* default.png in Resources */,
@@ -616,6 +622,95 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		46CC922C1EA7245F00AD92DD /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		46CC922D1EA7245F00AD92DD /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DaewoongElectronicApproval/DaewoongElectronicApproval.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
+				GCC_PREFIX_HEADER = "DaewoongElectronicApproval/DaewoongEA-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = Daewoong;
+				INFOPLIST_FILE = "DaewoongElectronicApproval/DaewoongEA-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = DaewoongElectronicApproval;
+				PROVISIONING_PROFILE = "d3349a4b-f9d8-4bf3-a4f0-11d64927bbd0";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		46CC922E1EA7245F00AD92DD /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DaewoongElectronicApprovalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = DaewoongElectronicApprovalTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaewoongElectronicApproval.app/DaewoongElectronicApproval";
+			};
+			name = Distribution;
+		};
+		46CC922F1EA7245F00AD92DD /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SmartRunner.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
+				GCC_PREFIX_HEADER = "DaewoongElectronicApproval/DaewoongEA-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = SmartRunner;
+				INFOPLIST_FILE = "DaewoongElectronicApproval/SmartRunner-info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.uwiseone.Smart-Runner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "570d68c4-c95c-4503-95e0-212569e940e1";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
 		8C42425D1A2FE20A00FEA0FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -697,6 +792,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DaewoongElectronicApproval/DaewoongElectronicApproval.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				GCC_PREFIX_HEADER = "DaewoongElectronicApproval/DaewoongEA-Prefix.pch";
@@ -705,10 +801,11 @@
 					Daewoong,
 				);
 				INFOPLIST_FILE = "DaewoongElectronicApproval/DaewoongEA-info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = DaewoongElectronicApproval;
-				PROVISIONING_PROFILE = "babaf092-8fba-4fd5-bbd4-707369bcd7ae";
+				PROVISIONING_PROFILE = "d3349a4b-f9d8-4bf3-a4f0-11d64927bbd0";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -717,15 +814,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = DaewoongElectronicApproval/DaewoongElectronicApproval.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				GCC_PREFIX_HEADER = "DaewoongElectronicApproval/DaewoongEA-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = Daewoong;
 				INFOPLIST_FILE = "DaewoongElectronicApproval/DaewoongEA-info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = DaewoongElectronicApproval;
-				PROVISIONING_PROFILE = "babaf092-8fba-4fd5-bbd4-707369bcd7ae";
+				PROVISIONING_PROFILE = "8ae582cf-683d-4866-9ff6-da34e9158433";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -768,6 +867,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SmartRunner.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				GCC_PREFIX_HEADER = "DaewoongElectronicApproval/DaewoongEA-Prefix.pch";
@@ -776,11 +876,12 @@
 					SmartRunner,
 				);
 				INFOPLIST_FILE = "DaewoongElectronicApproval/SmartRunner-info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uwiseone.Smart-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5e9d9f6e-419c-4840-8732-277aa20307bb";
+				PROVISIONING_PROFILE = "570d68c4-c95c-4503-95e0-212569e940e1";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -789,16 +890,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = SmartRunner.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: UWISEONE Co., Ltd. (289642M683)";
 				GCC_PREFIX_HEADER = "DaewoongElectronicApproval/DaewoongEA-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = SmartRunner;
 				INFOPLIST_FILE = "DaewoongElectronicApproval/SmartRunner-info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uwiseone.Smart-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5e9d9f6e-419c-4840-8732-277aa20307bb";
+				PROVISIONING_PROFILE = "97ce454e-d38e-4401-9c33-811fff3ecc61";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -810,6 +913,7 @@
 			buildConfigurations = (
 				8C42425D1A2FE20A00FEA0FD /* Debug */,
 				8C42425E1A2FE20A00FEA0FD /* Release */,
+				46CC922C1EA7245F00AD92DD /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -819,6 +923,7 @@
 			buildConfigurations = (
 				8C4242601A2FE20A00FEA0FD /* Debug */,
 				8C4242611A2FE20A00FEA0FD /* Release */,
+				46CC922D1EA7245F00AD92DD /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -828,6 +933,7 @@
 			buildConfigurations = (
 				8C4242631A2FE20A00FEA0FD /* Debug */,
 				8C4242641A2FE20A00FEA0FD /* Release */,
+				46CC922E1EA7245F00AD92DD /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -837,6 +943,7 @@
 			buildConfigurations = (
 				CFFDB95F1CE0770400D52907 /* Debug */,
 				CFFDB9601CE0770400D52907 /* Release */,
+				46CC922F1EA7245F00AD92DD /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
