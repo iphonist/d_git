@@ -29,7 +29,7 @@
 #ifdef DEBUG
 #define NSLog(s, ...) NSLog(@"<%@(%d):%s> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 #else // #####
-#define NSLog(s, ...) NSLog(@"<%@(%d):%s> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define NSLog(s, ...) //NSLog(@"<%@(%d):%s> %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
 #endif
 
 
