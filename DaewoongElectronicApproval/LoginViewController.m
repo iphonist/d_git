@@ -43,6 +43,8 @@
     NSString *loginPw = [[NSUserDefaults standardUserDefaults] stringForKey:@"pw"];
     NSLog(@"loginId %@ pw %@",loginId,loginPw);
     
+    self.id_TextField.placeholder = @"Email";
+    
     if([loginId length]>0 && [loginPw length]>0){
         
         self.id_TextField.text = loginId;
