@@ -823,7 +823,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = DaewoongElectronicApproval;
-				PROVISIONING_PROFILE = "8ae582cf-683d-4866-9ff6-da34e9158433";
+				PROVISIONING_PROFILE = "502c974a-ff3b-4d19-ba98-f5718b93f37c";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -900,7 +900,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uwiseone.Smart-Runner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "97ce454e-d38e-4401-9c33-811fff3ecc61";
+				PROVISIONING_PROFILE = "fb040587-5014-477f-89aa-936aecb57a61";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

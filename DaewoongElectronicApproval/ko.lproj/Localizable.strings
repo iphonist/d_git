@@ -6,8 +6,9 @@
   Copyright (c) 2014년 Ids&Trust. All rights reserved.
 */
 
-"str_e_approval" = "전자결재";
-"str_smartrunner" = "스마트러너";
+"str_e_approval" = "베아월드 전자결재";
+"str_smartrunner" = "Smart Runner 전자결재";
+
 "str_login" = "로그인";
 "str_logout" = "로그아웃";
 "str_Confirm" = "확인";

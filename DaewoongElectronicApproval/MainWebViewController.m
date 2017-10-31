@@ -83,6 +83,7 @@
 
 - (void)loadUrl
 {
+    NSLog(@"loadUrl");
     NSString *loginId = [[NSUserDefaults standardUserDefaults] stringForKey:@"id"];
 //    NSString *loginPw = [[NSUserDefaults standardUserDefaults] stringForKey:@"pw"];
     
@@ -219,7 +220,7 @@
         //        MainWebViewController *viewController = [[MainWebViewController alloc]init];
         
         self.token = access_token;
- 
+        NSLog(@"self.token %@",self.token);
         [self loadUrl];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
